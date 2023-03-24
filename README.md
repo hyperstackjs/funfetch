@@ -39,7 +39,7 @@ A type-safe, fetch based, functional HTTP toolkit for building API clients quick
 
 
 ```
-$ yarn add @hyperstackjs/funfetch
+$ pnpm add @hyperstackjs/funfetch
 ```
 
 A quick network action:
