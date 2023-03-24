@@ -1,0 +1,413 @@
+// Vitest Snapshot v1
+
+exports[`funfetch > custom response handler > GET/queryString 1`] = `"OK"`;
+
+exports[`funfetch > full response > DELETE/queryString 1`] = `
+{
+  "body": {
+    "prop": "del query",
+  },
+  "headers": {
+    "connection": "close",
+    "content-length": "20",
+    "content-type": "application/json; charset=utf-8",
+    "x-powered-by": "Express",
+  },
+  "status": 200,
+}
+`;
+
+exports[`funfetch > full response > GET/queryString 1`] = `
+{
+  "body": {
+    "hello": "get query",
+  },
+  "headers": {
+    "connection": "close",
+    "content-length": "21",
+    "content-type": "application/json; charset=utf-8",
+    "x-powered-by": "Express",
+  },
+  "status": 200,
+}
+`;
+
+exports[`funfetch > full response > POST/400 with message 1`] = `
+{
+  "body": "<!DOCTYPE html>
+<html lang=\\"en\\">
+<head>
+<meta charset=\\"utf-8\\">
+<title>Error</title>
+</head>
+<body>
+<pre>Cannot POST /400-with-message</pre>
+</body>
+</html>
+",
+  "headers": {
+    "connection": "close",
+    "content-length": "156",
+    "content-security-policy": "default-src 'none'",
+    "content-type": "text/html; charset=utf-8",
+    "x-content-type-options": "nosniff",
+    "x-powered-by": "Express",
+  },
+  "status": 404,
+}
+`;
+
+exports[`funfetch > full response > get/404 1`] = `
+{
+  "body": "Not Found",
+  "headers": {
+    "connection": "close",
+    "content-length": "9",
+    "content-type": "text/plain; charset=utf-8",
+    "x-powered-by": "Express",
+  },
+  "status": 404,
+}
+`;
+
+exports[`funfetch > full response > get/404 with invalid json 1`] = `
+{
+  "body": {
+    "error": {
+      "code": 23,
+      "message": "Some error happened",
+      "param": "hello_world",
+      "stack": {},
+    },
+  },
+  "headers": {
+    "connection": "close",
+    "content-length": "86",
+    "content-type": "application/json; charset=utf-8",
+    "x-powered-by": "Express",
+  },
+  "status": 404,
+}
+`;
+
+exports[`funfetch > full response > get/404 with json 1`] = `
+{
+  "body": {
+    "foo": "baz",
+  },
+  "headers": {
+    "connection": "close",
+    "content-length": "13",
+    "content-type": "application/json; charset=utf-8",
+    "x-powered-by": "Express",
+  },
+  "status": 400,
+}
+`;
+
+exports[`funfetch > full response > get/delay 1`] = `
+{
+  "body": {},
+  "headers": {
+    "connection": "close",
+    "content-length": "2",
+    "content-type": "application/json; charset=utf-8",
+    "x-powered-by": "Express",
+  },
+  "status": 200,
+}
+`;
+
+exports[`funfetch > full response > get/users 1`] = `
+{
+  "body": {
+    "userId": "id-22334",
+  },
+  "headers": {
+    "connection": "close",
+    "content-length": "21",
+    "content-type": "application/json; charset=utf-8",
+    "x-powered-by": "Express",
+  },
+  "status": 200,
+}
+`;
+
+exports[`funfetch > full response > post/users 1`] = `
+{
+  "body": {
+    "body": {
+      "firstName": "foo",
+    },
+    "params": {
+      "userId": "id-22334",
+    },
+  },
+  "headers": {
+    "connection": "close",
+    "content-length": "59",
+    "content-type": "application/json; charset=utf-8",
+    "x-powered-by": "Express",
+  },
+  "status": 200,
+}
+`;
+
+exports[`funfetch > full response > post-content 1`] = `
+{
+  "body": {
+    "data": {},
+    "headers": {
+      "accept": "*/*",
+      "accept-encoding": "gzip,deflate",
+      "connection": "close",
+      "content-length": "0",
+      "content-type": "application/json",
+      "user-agent": "funfetch/1.0",
+    },
+  },
+  "headers": {
+    "connection": "close",
+    "content-length": "200",
+    "content-type": "application/json; charset=utf-8",
+    "x-powered-by": "Express",
+  },
+  "status": 200,
+}
+`;
+
+exports[`funfetch > simple response > DELETE/queryString 1`] = `
+{
+  "prop": "del query",
+}
+`;
+
+exports[`funfetch > simple response > GET/queryString 1`] = `
+{
+  "hello": "get query",
+}
+`;
+
+exports[`funfetch > simple response > POST/400 with message 1`] = `
+{
+  "0": "<",
+  "1": "!",
+  "10": "h",
+  "100": "p",
+  "101": "r",
+  "102": "e",
+  "103": ">",
+  "104": "C",
+  "105": "a",
+  "106": "n",
+  "107": "n",
+  "108": "o",
+  "109": "t",
+  "11": "t",
+  "110": " ",
+  "111": "P",
+  "112": "O",
+  "113": "S",
+  "114": "T",
+  "115": " ",
+  "116": "/",
+  "117": "4",
+  "118": "0",
+  "119": "0",
+  "12": "m",
+  "120": "-",
+  "121": "w",
+  "122": "i",
+  "123": "t",
+  "124": "h",
+  "125": "-",
+  "126": "m",
+  "127": "e",
+  "128": "s",
+  "129": "s",
+  "13": "l",
+  "130": "a",
+  "131": "g",
+  "132": "e",
+  "133": "<",
+  "134": "/",
+  "135": "p",
+  "136": "r",
+  "137": "e",
+  "138": ">",
+  "139": "
+",
+  "14": ">",
+  "140": "<",
+  "141": "/",
+  "142": "b",
+  "143": "o",
+  "144": "d",
+  "145": "y",
+  "146": ">",
+  "147": "
+",
+  "148": "<",
+  "149": "/",
+  "15": "
+",
+  "150": "h",
+  "151": "t",
+  "152": "m",
+  "153": "l",
+  "154": ">",
+  "155": "
+",
+  "16": "<",
+  "17": "h",
+  "18": "t",
+  "19": "m",
+  "2": "D",
+  "20": "l",
+  "21": " ",
+  "22": "l",
+  "23": "a",
+  "24": "n",
+  "25": "g",
+  "26": "=",
+  "27": "\\"",
+  "28": "e",
+  "29": "n",
+  "3": "O",
+  "30": "\\"",
+  "31": ">",
+  "32": "
+",
+  "33": "<",
+  "34": "h",
+  "35": "e",
+  "36": "a",
+  "37": "d",
+  "38": ">",
+  "39": "
+",
+  "4": "C",
+  "40": "<",
+  "41": "m",
+  "42": "e",
+  "43": "t",
+  "44": "a",
+  "45": " ",
+  "46": "c",
+  "47": "h",
+  "48": "a",
+  "49": "r",
+  "5": "T",
+  "50": "s",
+  "51": "e",
+  "52": "t",
+  "53": "=",
+  "54": "\\"",
+  "55": "u",
+  "56": "t",
+  "57": "f",
+  "58": "-",
+  "59": "8",
+  "6": "Y",
+  "60": "\\"",
+  "61": ">",
+  "62": "
+",
+  "63": "<",
+  "64": "t",
+  "65": "i",
+  "66": "t",
+  "67": "l",
+  "68": "e",
+  "69": ">",
+  "7": "P",
+  "70": "E",
+  "71": "r",
+  "72": "r",
+  "73": "o",
+  "74": "r",
+  "75": "<",
+  "76": "/",
+  "77": "t",
+  "78": "i",
+  "79": "t",
+  "8": "E",
+  "80": "l",
+  "81": "e",
+  "82": ">",
+  "83": "
+",
+  "84": "<",
+  "85": "/",
+  "86": "h",
+  "87": "e",
+  "88": "a",
+  "89": "d",
+  "9": " ",
+  "90": ">",
+  "91": "
+",
+  "92": "<",
+  "93": "b",
+  "94": "o",
+  "95": "d",
+  "96": "y",
+  "97": ">",
+  "98": "
+",
+  "99": "<",
+}
+`;
+
+exports[`funfetch > simple response > get/404 1`] = `
+{
+  "0": "N",
+  "1": "o",
+  "2": "t",
+  "3": " ",
+  "4": "F",
+  "5": "o",
+  "6": "u",
+  "7": "n",
+  "8": "d",
+}
+`;
+
+exports[`funfetch > simple response > get/404 with invalid json 1`] = `
+{
+  "error": {
+    "code": 23,
+    "message": "Some error happened",
+    "param": "hello_world",
+    "stack": {},
+  },
+}
+`;
+
+exports[`funfetch > simple response > get/404 with json 1`] = `
+{
+  "foo": "baz",
+}
+`;
+
+exports[`funfetch > simple response > get/delay 1`] = `{}`;
+
+exports[`funfetch > simple response > get/delay 2`] = `
+{
+  "userId": "id-22334",
+}
+`;
+
+exports[`funfetch > simple response > post-content 1`] = `
+{
+  "data": {},
+  "headers": {
+    "accept": "*/*",
+    "accept-encoding": "gzip,deflate",
+    "connection": "close",
+    "content-length": "0",
+    "content-type": "application/json",
+    "user-agent": "node-fetch/1.0 (+https://github.com/bitinn/node-fetch)",
+  },
+}
+`;

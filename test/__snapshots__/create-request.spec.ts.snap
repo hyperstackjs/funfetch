@@ -1,0 +1,108 @@
+// Vitest Snapshot v1
+
+exports[`createRequest > routes > POST data 1`] = `
+{
+  "body": "{\\"user\\":{\\"name\\":\\"bill\\"}}",
+  "method": "POST",
+  "opts": {
+    "headers": {
+      "content-type": "application/json",
+    },
+  },
+  "url": "/api/microsoft/listing?page=2",
+}
+`;
+
+exports[`createRequest > routes > absolute URL 1`] = `
+{
+  "body": undefined,
+  "method": "GET",
+  "opts": {
+    "headers": {
+      "content-type": "application/json",
+    },
+  },
+  "url": "https://api.github.com/repos/tannerlinsley/react-query",
+}
+`;
+
+exports[`createRequest > routes > base URL 1`] = `
+{
+  "body": undefined,
+  "method": "GET",
+  "opts": {
+    "headers": {
+      "content-type": "application/json",
+    },
+  },
+  "url": "http://microsoft.com/api/users?page=2",
+}
+`;
+
+exports[`createRequest > routes > functional endpoint 1`] = `
+{
+  "body": undefined,
+  "method": "GET",
+  "opts": {
+    "headers": {
+      "content-type": "application/json",
+    },
+  },
+  "url": "/api/microsoft/listing?page=2",
+}
+`;
+
+exports[`createRequest > routes > override base opts 1`] = `
+{
+  "body": "{\\"user\\":{\\"name\\":\\"bill\\"}}",
+  "method": "POST",
+  "opts": {
+    "headers": {
+      "Authorization": "Basic X",
+      "authorization": "Bearer magic-string",
+      "content-type": "application/json",
+    },
+  },
+  "url": "/api/microsoft/listing?page=2",
+}
+`;
+
+exports[`createRequest > routes > simple GET 1`] = `
+{
+  "body": undefined,
+  "method": "GET",
+  "opts": {
+    "headers": {
+      "content-type": "application/json",
+    },
+  },
+  "url": "/api/users",
+}
+`;
+
+exports[`createRequest > routes > simple GET with query 1`] = `
+{
+  "body": undefined,
+  "method": "GET",
+  "opts": {
+    "headers": {
+      "content-type": "application/json",
+    },
+  },
+  "url": "/api/users?page=2",
+}
+`;
+
+exports[`createRequest > routes > use bearer token 1`] = `
+{
+  "body": "{\\"user\\":{\\"name\\":\\"bill\\"}}",
+  "method": "POST",
+  "opts": {
+    "headers": {
+      "authorization": "Bearer magic-string",
+      "content-type": "application/json",
+    },
+  },
+  "url": "/api/microsoft/listing?page=2",
+}
+`;
