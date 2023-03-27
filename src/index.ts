@@ -48,7 +48,18 @@ const simpleResponseJsonHandler = async (
 
 const throwIfBadStatus = (response: Response) => {
   if (response.status >= 400 && response.status < 600) {
-    throw new Error(JSON.stringify(response))
+    throw response
+  }
+}
+
+export const ignoreIfBadStatus = (_response: Response) => {}
+
+export const throwErrorObjectIfError = (
+  converted: ParsedResponse,
+  raw: Response
+) => {
+  if (raw.status >= 400 && raw.status < 600) {
+    throw converted
   }
 }
 
@@ -89,7 +100,7 @@ export const createMethod =
     debug('response: %O', convertedResponse)
 
     const throwIfError = config?.throwIfError || noop
-    throwIfError(convertedResponse)
+    throwIfError(convertedResponse, res)
 
     debug('done: (no errors)')
     return convertedResponse

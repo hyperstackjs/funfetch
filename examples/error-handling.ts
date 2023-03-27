@@ -11,7 +11,7 @@ const { get } = funfetch({
       throw new Error('Hello from custom error')
     }
   },
-  throwIfError: (res: ParsedResponse) => {
+  throwIfError: (res: ParsedResponse, _raw: Response) => {
     if (res.body?.match && res.body?.match(/iana/)) {
       throw new Error('Hello from body matching error')
     }

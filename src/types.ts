@@ -14,7 +14,10 @@ export interface MethodConfig {
   fullResponse?: boolean
   responseHandler?: (res: Response) => ParsedResponse | SimpleResponse
   throwIfBadStatus?: (res: Response) => void
-  throwIfError?: (res: ParsedResponse | SimpleResponse) => void
+  throwIfError?: (
+    parsed: ParsedResponse | SimpleResponse,
+    raw: Response
+  ) => void
 }
 export type Endpoint<TParams, TData, TQuery, TRes> = (
   data?: EndpointData<TParams, TData, TQuery>
@@ -43,16 +46,16 @@ export interface RequestParams<TParams, TData, TQuery> {
 }
 
 export interface Funfetch {
-  post: <TParams, TData, TQuery, TRes>(
+  post: <TRes, TParams = any, TData = any, TQuery = any>(
     ep: string | ((params: any) => string)
   ) => Endpoint<TParams, TData, TQuery, TRes>
-  get: <TParams, TData, TQuery, TRes>(
+  get: <TRes, TParams = any, TData = any, TQuery = any>(
     ep: string | ((params: any) => string)
   ) => Endpoint<TParams, TData, TQuery, TRes>
-  put: <TParams, TData, TQuery, TRes>(
+  put: <TRes, TParams = any, TData = any, TQuery = any>(
     ep: string | ((params: any) => string)
   ) => Endpoint<TParams, TData, TQuery, TRes>
-  del: <TParams, TData, TQuery, TRes>(
+  del: <TRes, TParams = any, TData = any, TQuery = any>(
     ep: string | ((params: any) => string)
   ) => Endpoint<TParams, TData, TQuery, TRes>
 }
