@@ -8,6 +8,8 @@ export type SimpleResponse = string | any
 export interface MethodConfig {
   bearer?: string
   basic?: { user: string; password: string }
+  getBearer?: () => string
+  getBasic?: () => { user: string; password: string }
   base?: string
   fetch?: any
   baseOpts?: RequestInit

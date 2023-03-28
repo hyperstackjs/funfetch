@@ -190,6 +190,7 @@ const { get } = funfetch({
 const ok = get('https://postman-echo.com/basic-auth')
 ```
 
+Both `bearer` and `basic` have their dynamic counterparts `getBasic` and `getBearer` for cases where you need to fetch this dynamically from localstorage.
 
 ### Custom Headers
 

@@ -46,6 +46,15 @@ export const createRequest = <TParams, TData, TQuery>(
     headers.set('Authorization', `Bearer ${config.bearer}`)
   }
 
+  if (config?.getBasic) {
+    const { user, password } = config!.getBasic()
+    headers.set('Authorization', `Basic ${btoa(`${user}:${password}`)}`)
+  }
+
+  if (config?.getBearer) {
+    headers.set('Authorization', `Bearer ${config!.getBearer()}`)
+  }
+
   const customopts: RequestInit = {}
   customopts.headers = headersToObject(headers)
 
